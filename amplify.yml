@@ -4,10 +4,10 @@ frontend:
     preBuild:
       commands:
         - nvm install 20
+        - yarn install
     build:
       commands:
         - yarn run build
-        - yarn install --production=false
   artifacts:
     baseDirectory: dist/foo/browser
     files:

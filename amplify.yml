@@ -7,6 +7,7 @@ frontend:
     build:
       commands:
         - yarn run build
+        - yarn install --production=false
   artifacts:
     baseDirectory: dist/foo/browser
     files:

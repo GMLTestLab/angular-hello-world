@@ -3,12 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - nvm install 20
     build:
       commands:
-        - npm run build
+        - yarn run build
   artifacts:
-    baseDirectory: dist
+    baseDirectory: dist/foo/browser
     files:
       - '**/*'
   cache:
